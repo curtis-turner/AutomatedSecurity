@@ -56,11 +56,7 @@ def revoke_security_group_ingress(event_detail):
         GroupId=request_parameters['groupId'],
         IpPermissions=ip_permissions
     )
-    '''boto3.client('sns').publish(
-        TopicArn = 'arn:aws:sns:us-east-1:160232325581:Notify_CloudSec_Team-topic',
-        Subject = 'EC2 -Security Group - ' + request_parameters['groupId'] + ' was modified',
-        Message = 'Security Group - ' + request_parameters['groupId'] + ' was modified but changes have been removed. Check EC2 security groups to confirm.'
-        )'''
+    
     # Build the result
     result = {}
     result['group_id'] = request_parameters['groupId']

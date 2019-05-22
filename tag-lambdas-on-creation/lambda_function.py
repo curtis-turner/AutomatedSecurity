@@ -58,5 +58,5 @@ def lambda_handler(event, context):
         #add the date to the Create tag value
         tagResource(date, functionArn)
         
-        #send notification to CloudSec Team
+        #send notification
         notify(functionName,userName)

@@ -87,10 +87,8 @@ def lambda_handler(event, context):
         
         if hasPublicAccess(grant):
             if isAuthorizedUser(userId):
-                #send notification to FIS
                 notify(bucket, userId, userName)
             else:
-                #send notification to FIS
                 #auto remediate
                 remediateAccess(bucket)
                 notify(bucket, userId, userName)
@@ -115,10 +113,8 @@ def lambda_handler(event, context):
         
         if hasPublicAccess(grant):
             if isAuthorizedUser(userId):
-                #send notification to FIS
                 notify(bucket, userId, userName)
             else:
-                #send notification to FIS
                 #auto remediate
                 remediateAccess(bucket)
                 notify(bucket, userId, userName)

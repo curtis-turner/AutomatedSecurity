@@ -32,8 +32,7 @@ def lambda_handler(event, context):
     
     instancesToStop = []
 	
-    allowedTagKeys=['Name', 'VPC', 'Date Created', 'Project Name', 'Environment', 'Functionality', 'Application ID', 'Organization']
-    
+    allowedTagKeys=['Name']
     missingTag = True
     
     for instance in instances:
