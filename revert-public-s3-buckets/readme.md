@@ -7,5 +7,5 @@ It validates that the user who made the change is not part of a specific group. 
 ## Requirements
 1. Python 3.7+
 2. Environment variables
-a. GROUP_ARN - Special Group of Users who are allowed to made buckets public like system admins
-b. SNS_TOPIC - SNS Topic to send alerts to regarging the bucket being made public
+  * GROUP_ARN - Special Group of Users who are allowed to made buckets public like system admins
+  * SNS_TOPIC - SNS Topic to send alerts to regarging the bucket being made public
